@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px;
+}
+
+#app {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 890px;
+    // min-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // background-color: cadetblue;
+    
+}
+
+#app1 {
+    margin: 0 auto;
+    margin-top: -50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #FFD972;
+    // margin-bottom: -140px; 
+}
+
+.items-container {
+    width: 100%;
+    min-height: 200px;
+    // background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .items-items {
+        // position: relative;
+        max-width: 300px;
+        min-height: 300px;
+        // background-color: #0071dc;
+
+       li {
+        height: 50px;
+        font-family: ProximaNovaCondensed;
+        font-size: 20px;
+
+       }
+    }
+
+    .item-img {
+        max-width: 500px;
+        min-height: 300px;
+        // background-color:aqua;
+        img {
+            width: 500px;
+            height: 570px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 798px) {
+    .items-container {
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-evenly;
+
+        .item-img {
+            margin-top: 20px;
+            max-width: 300px;
+            img {
+                
+                max-width: 300px;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4ca0ee;
+    border: none;
+    border-radius: 25px;
+    font-family: ModernWarfare;
+    cursor: pointer;
+}
+
+::placeholder {
+    // font-family: ModernWarfare;
+    color: black;
+    
+}
+
+.btn-gallery {
+    width: 150px;
+    height: 35px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #4ca0ee;
+    // cursor: pointer;
+    border-radius: 25px;
+    // padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load {
+    width: 150px;
+    height: 35px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: ModernWarfare;
+    background-color: #4ca0ee;
+    // cursor: pointer;
+    border-radius: 25px;
+    // padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addItem {
+    margin-right: 23px;
+}
+
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;   
+}
+
+input {
+    background-color: #4ca0ee;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+    height: 35px;
+}
+
+li input {
+    // margin: 0 20px;
+    margin-right: 20px;
+}
+
+li.strike {
+    text-decoration: line-through;
+}
+
+.right {
+    position: absolute;
+    right: 20px;
+}
+
+.delete {
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    background-color: #d0bcba;
+    border-radius: 25px;
+    font-family: ModernWarfare;
+    font-size: 10px;
+}
+
+.camp-holder {
+    width: 150px;
+    margin-bottom: 30px;
+    border-bottom: solid 2px orangered;
+    font-family: ProximaNovaCondensed;
+    font-size: 25px;
+    cursor: pointer;  
+}
+
+.brief-rating {
+    font-size: 9px;
+    font-family: Proxima-Nova-Regular;
+    font-size: 16px;
+}
+
+.brief-des {
+    margin-bottom: 10px;
+}
+
+.thumb-price {
+    // font-family: Proxima-Nova-Regular;
+    // font-size: 20px;
+}
+
+.camp {
+    // background-color: beige;
+    // min-height: 300px;
+    .camp-container {
+        max-width: 890px;
+        min-height: 300px;
+        // background-color:coral;
+        display: flex;
+    }
+}
+
+.list-objects {
+    width: 150px;
+    height: 100px;
+    background-color: #4ca0ee;
+}
+
+@media only screen and (max-width: 890px) {
+    .camp-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .close {
+        margin-left: 350px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .camp-container {
+        width: 300px;
+    }
+
+    .close {
+        margin-left: unset;
+        background-color: #0071dc;
+    }
+}
+ 
+.campImg {
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 530px) {
+    .campImg {
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }   
+}
+
+.campDes {
+    max-width: 490px;
+    min-height: 400px;
+    // background-color: aqua;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Proxima-Nova-Regular;
+    padding-left: 30px;
+
+    h2 {
+        font-family: ProximaNovaCondensed;
+        font-size: 45px;
+    }
+
+    img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 200px;
+        height: 25px;
+    }
+}
+
+.button {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Proxima-Nova-Regular;
+    text-align: center;
+    background-color: #4ca0ee;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 5px;
+    // margin-left: 10px;
+}
+
+.more-items {
+width: 300px;
+// margin: 0 auto;
+}
+
+.close {
+    // padding: 10px 30px;
+    // cursor: pointer;
+    width: 100px;
+    height: 27px;
+    font-size: 16px;
+    background-color: #d0bcba;
+}
+
+@media only screen and (max-width: 530px) {
+    .close {
+        margin-top: 20px;
+        width: 300px;
+        background-color: #d0bcba;
+    }
+}
+
+.site-container {
+    margin: 0 auto;
+    max-width: 1250px;
+    min-height: 300px;
+    // background-color: #FFD972;
+}
+
+@font-face {
+    font-family: VirtualRotRegular;
+    src: url(../css/fonts/VirtualRotRegular.ttf);
+}
+
+@font-face {
+    font-family: ModernWarfare;
+    src: url(../css/fonts/ModernWarfare.ttf);
+}
+
+@font-face {
+    font-family: Proxima-Nova-Regular;
+    src: url(../css/fonts/Proxima-Nova-Regular.ttf);
+}
+
+@font-face {
+    font-family: ProximaNovaCondensed;
+    src: url(../css/fonts/ProximaNovaCondensed.ttf);
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url(../css/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: Caveat-Regular;
+    src: url(../css/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../css/fonts/Lato-Regular.ttf);
+}   

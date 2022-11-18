@@ -1,0 +1,35 @@
+
+.hero-container {
+    max-width: 100%;
+    min-height: 400px;
+    /* background-color: beige; */
+    padding-top: 100px;
+
+}
+
+.hero-image {
+    width: 100%;
+    min-height: 400px;
+    /* background-color: cadetblue; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.40)) ,url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.callout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    height: 200px;
+    // background-color: blueviolet;
+    font-size: 35px;
+    font-family: ModernWarfare;
+    color: #fff;
+    text-align: center;
+}
